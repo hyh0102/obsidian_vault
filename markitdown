@@ -1,0 +1,18 @@
+
+
+## 安装
+
+Windows系统不适用bash指令，在Windows中通过git bash执行bash指令
+
+1. 标准Python环境下，用下面命令创建并激活虚拟环境：
+'''bash
+python -m venv .venv
+source .venv/bin/activate
+'''
+此时git bash中会出现(.venv)。说明虚拟环境构建完成
+
+2. 安装markitdown，使用pip
+'''bash
+pip install markitdown[all]
+'''
+* 可选依赖项：MarkItDown带有可选依赖包，用来启用不同文件格式的解析。前面的 [all] 会一次性安装全部可选依赖。你也可以按需单独安装，更加灵活。
